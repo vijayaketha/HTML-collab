@@ -1,0 +1,122 @@
+/* EDUCATION SECTION - Navy Blue Background with Matching Inner Cards */
+header {
+    background: linear-gradient(90deg, #020617, #0f172a);
+    padding: 15px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+/* Navigation Links */
+.nav a {
+    position: relative;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #cbd5f5;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 2px;
+    transition: 
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Hover Effect */
+.nav a:hover {
+    color: #38bdf8;
+    transform: scale(1.12);
+}
+
+/* Underline Animation */
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+/* Active Page (Optional) */
+.nav a.active {
+    color: #38bdf8;
+}
+.education {
+    margin-top: 70px;
+    padding: 50px 30px;
+    background-color: #0a1e3f; /* navy blue background */
+    border-radius: 20px;
+}
+
+.edu-title {
+    font-size: 28px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #00e5ff; /* bright, readable heading */
+    font-weight: bold;
+}
+
+.edu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Individual Education Card */
+.edu-item {
+    background: rgba(25, 50, 90, 0.8); /* slightly lighter blue than background */
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.edu-item:hover {
+    transform: translateY(-6px);
+    background: rgba(40, 70, 130, 0.85); /* darker blue on hover */
+}
+
+.edu-item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffd369; /* subtle highlight color */
+    font-weight: 600;
+}
+
+.edu-item p {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.edu-item span {
+    font-size: 14px;
+    color: #00e5ff; /* matching highlight color */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .edu-container {
+        grid-template-columns: 1fr;
+    }
+}

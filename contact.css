@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+header {
+    background: linear-gradient(90deg, #020617, #0f172a);
+    padding: 15px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+/* Navigation Links */
+.nav a {
+    position: relative;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #cbd5f5;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 2px;
+    transition: 
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Hover Effect */
+.nav a:hover {
+    color: #38bdf8;
+    transform: scale(1.12);
+}
+
+/* Underline Animation */
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+/* Active Page (Optional) */
+.nav a.active {
+    color: #38bdf8;
+}
+/* Full section */
+.social {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a1a2f, #0f2a44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.social-links {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px 60px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading */
+.social-links h2 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Social icons */
+.social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    margin: 12px;
+    border-radius: 50%;
+    background: #102c4c;
+    color: #ffffff;
+    font-size: 28px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+/* Hover effect */
+.social-links a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* Individual colors */
+.social-links a:nth-child(2):hover {
+    background: #e1306c; /* Instagram */
+}
+
+.social-links a:nth-child(3):hover {
+    background: #0077b5; /* LinkedIn */
+}
+
+.social-links a:nth-child(4):hover {
+    background: #333333; /* GitHub */
+}
+
+.social-links a:nth-child(5):hover {
+    background: #25d366; /* WhatsApp */
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .social-links {
+        padding: 30px;
+    }
+
+    .social-links a {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+    }
+}

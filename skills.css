@@ -1,0 +1,103 @@
+/* SKILLS SECTION */
+.skills {
+    margin-top: 70px;
+    padding: 50px 30px;
+    background-color: #0a1e3f; /* navy blue background */
+    border-radius: 20px;
+}
+header {
+    background: linear-gradient(90deg, #020617, #0f172a);
+    padding: 15px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+/* Navigation Links */
+.nav a {
+    position: relative;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #cbd5f5;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 2px;
+    transition: 
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Hover Effect */
+.nav a:hover {
+    color: #38bdf8;
+    transform: scale(1.12);
+}
+
+/* Underline Animation */
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+/* Active Page (Optional) */
+.nav a.active {
+    color: #38bdf8;
+}
+
+.skills-title {
+    font-size: 28px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #00e5ff; /* title highlight */
+    font-weight: bold;
+}
+
+/* Individual Skill Item */
+.skill-item {
+    margin-bottom: 25px;
+}
+
+.skill-item p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #ffd369; /* skill name highlight */
+}
+
+/* Skill Bar Container */
+.skill-bar {
+    width: 100%;
+    height: 20px;
+    background: rgba(25, 50, 90, 0.7); /* lighter navy */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Skill Level Bar */
+.skill-level {
+    height: 100%;
+    background: linear-gradient(90deg, #00e5ff, #ffd369); /* gradient bar */
+    border-radius: 12px;
+    transition: width 1.5s ease-in-out;
+}

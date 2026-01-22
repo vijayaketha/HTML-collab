@@ -1,0 +1,191 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    line-height: 1.7;
+}
+header {
+    background: linear-gradient(90deg, #020617, #0f172a);
+    padding: 15px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #38bdf8;
+    letter-spacing: 1px;
+}
+
+/* Navigation Links */
+.nav a {
+    position: relative;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #cbd5f5;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 2px;
+    transition: 
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Hover Effect */
+.nav a:hover {
+    color: #38bdf8;
+    transform: scale(1.12);
+}
+
+/* Underline Animation */
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+/* Active Page (Optional) */
+.nav a.active {
+    color: #38bdf8;
+}
+
+/* Main Container */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* ABOUT SECTION */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.about-content {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.about-content:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* DIFFERENT SECTION */
+.differnet {
+    margin-bottom: 60px;
+}
+
+.different-content {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.ordered {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #00e5ff;
+}
+
+.different-content li {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+/* VLOGGING SECTION */
+.vlog {
+    margin-top: 70px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    text-align: center;
+}
+
+.vlog-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #00e5ff;
+}
+
+.vlog-desc {
+    font-size: 16px;
+    margin-bottom: 25px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* VIDEO BOX */
+.video-box {
+    display: flex;
+    justify-content: center;
+}
+
+.video-box video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* GOAL SECTION */
+.goal {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.goal-content {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #00e5ff;
+}
+
+.goal-about {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.goal-ind {
+    font-size: 15px;
+    font-style: italic;
+    color: #cbcaca;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
